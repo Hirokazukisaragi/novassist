@@ -12,3 +12,7 @@ body{
     background-color: gray;
     text-align: center;
 }
+.btn{
+    width: 640px;
+    height: 64px
+}

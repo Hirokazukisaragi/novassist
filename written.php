@@ -28,4 +28,5 @@ if(!file_exists("./novel/". $title)){
 }else{
     echo "書き込めませんでした";
 }
+ echo "<a href=\"./all.php\">" . 一覧 . "</a>";
 ?>

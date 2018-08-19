@@ -19,11 +19,11 @@ and open the template in the editor.
             <textarea name="novel" cols="80" rows="24" wrap="hard" maxlength="1000000">
             </textarea>
             <br>
-<button  type = “submit” value =“send“>書き込む</button>
+            <button  type = "submit" class="btn" value ="send">書き込む</button>
         </form>
         
         <form action="all.php" method="post">
-            <button type="submit" value="all">all</button>
+            <button type="submit" class="btn" value="all">all</button>
         </form>
         
 </html>

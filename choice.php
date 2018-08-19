@@ -6,3 +6,7 @@
  * and open the template in the editor.
  */
 
+ $delf = $_POST['del'];
+ unlink($delf);
+ echo $delf . "を削除しました";
+ echo "<a href=\"./all.php\">" . 戻る . "</a>";
