@@ -8,7 +8,6 @@
 if(isset($_POST['novel']) && isset($_POST['title'])){
 $novel = $_POST['novel'];
     $title = $_POST['title'];
-    $novel = nl2br($novel);
     /*
     $novel =  "<!DOCTYPE html>
 <html>

@@ -9,6 +9,7 @@ if(isset($_POST['edit'])){
     //$fname = "./novel/" . $_POST['edit'];
     $fname = $_POST['edit'];
     $src = file_get_contents($_POST['edit']);
+    
 }else{
     $src = "";
 }

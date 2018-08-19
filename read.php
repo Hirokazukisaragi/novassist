@@ -8,6 +8,7 @@
 if(isset($_POST['read'])){
     $fname = $_POST['read'];
     $novel = file_get_contents($fname);
+    $novel = nl2br($novel);
 }
     $novel =  "<!DOCTYPE html>
 <html>
