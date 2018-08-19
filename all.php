@@ -23,7 +23,7 @@ foreach ($filelist as $file) {
             echo "<div class=\"fname\">";
             //$link = "<a href=" . "http://lightnovel-club.sakura.ne.jp/"  . $file . ">";
             echo basename($file);
-            echo $file;
+            //echo $file;
             echo "</a>";
             echo "<form action=\"choice.php\" method=\"post\">";
             echo "<button name=\"del\" type = \"submit\"  value=" . $file . ">削除</button>";
