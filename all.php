@@ -14,7 +14,7 @@ $filelist = glob($dir . '*');
 foreach ($filelist as $file) {
 
 	if (is_file($file)) {
-            $link = "<a href=" . "http://your-own-servere/"  . $file . ">";
+            $link = "<a href=" . "http://lightnovel-club.sakura.ne.jp/"  . $file . ">";
             echo $link;
             
 		print($file) ;
