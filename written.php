@@ -9,6 +9,7 @@ if(isset($_POST['novel']) && isset($_POST['title'])){
 $novel = $_POST['novel'];
     $title = $_POST['title'];
     $novel = nl2br($novel);
+    /*
     $novel =  "<!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +19,17 @@ $novel = $_POST['novel'];
 <![endif]-->
 </head>
 <body>" . $novel . "</body></html>";
+     */
 if(!file_exists("./novel/". $title)){
     touch( "./novel/" . $title );
     $fh = fopen("./novel/".$title, "wb");
     fwrite($fh, $novel);
     fclose($fh);
     echo '書き込みました';
+}else{
+    $fh = fopen("./novel/".$title, "wb");
+    fwrite($fh, $novel);
+    fclose($fh);
 }
 }else{
     echo "書き込めませんでした";
