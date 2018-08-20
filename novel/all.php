@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if($_SESSION['valid'] != 'valid'){
+        header( "Location: ../index.php");
+        
+    }
+?>
 <html>
     <head>
         <meta charset="UTF-8">
